@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* FIRST PAGE */
+.hero {
+  min-height: 100vh;
+  background: #15470f; /* light royal green */
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 600px;
+}
+
+/* SECOND PAGE */
+.content {
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.content section {
+  margin-bottom: 50px;
+}
+
+img {
+  display: block;
+  margin-bottom: 20px;
+}
+.product img {
+  width: 70%;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.product p {
+  font-size: 16px; /* same size as email / phone text */
+  margin: 4px 0;
+}
