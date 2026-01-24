@@ -1,0 +1,213 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #042c12;
+  font-family: "Times New Roman", Georgia, serif;
+}
+
+/* HEADER */
+.top-header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 10vh;
+  background: #042c12;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  z-index: 1000;
+}
+
+.menu-btn {
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.brand {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.right-links {
+  display: flex;
+  gap: 18px;
+}
+
+.gold-btn {
+  border: 1px solid gold;
+  padding: 8px 16px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+/* FIXED DIVIDER */
+.header-divider {
+  position: fixed;
+  top: 10vh;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(to right, gold, black, gold);
+  z-index: 999;
+}
+
+/* SIDE MENU */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 260px;
+  height: 100%;
+  background: #f6efe6;
+  padding: 80px 20px;
+  transition: 0.3s;
+  z-index: 1100;
+}
+.side-menu.open { left: 0; }
+.side-menu a {
+  display: block;
+  margin: 15px 0;
+  text-decoration: none;
+  color: black;
+}
+
+/* hero*/
+.hero {
+  position: relative;   /* ADD THIS */
+  height: 100vh;
+  width: 100vw;
+  padding-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* FULL SCREEN LOGO */
+.logo {
+  width: 100vw;
+  height: calc(100vh - 10vh); /* full page minus header */
+  object-fit: cover; /* fills completely */
+}
+
+/* WELCOME AT BOTTOM */
+.welcome {
+  position: absolute;
+  bottom: 20px;              /* sits at bottom of logo/page */
+  left: 50%;
+  transform: translateX(-50%);
+  font-style: italic;
+  font-size: 42px;
+  color: black;
+  z-index: 2;
+}
+
+
+
+/* CATEGORIES */
+.categories {
+  display: flex;
+  height: 690px;
+  justify-content: center;
+  gap: 10%;
+  padding: 80px 5%;
+  background: #f7f9f8;
+}
+
+.card {
+  width: 40%;
+  border-radius: 30px;
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.outlined {
+  border: 2px solid black;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+.card p {
+  background: #b8966a; /* light cream */
+  margin: 0;
+  padding: 20px;
+  font-size: 22px;
+}
+
+
+/* CONTACT */
+.contact-section {
+  padding: 80px 10%;
+  background: #042c12;
+  text-align: center;
+}
+.phone {
+  font-size: 20px;
+  letter-spacing: 4px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.contact-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 20px;
+  justify-content: center;
+}
+
+/* BUTTON COLORS */
+.btn {
+  padding: 14px 22px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #ebe5e5;
+  font-weight: 500;
+}
+
+.email { background: #0f6c7c; }
+.whatsapp { background: #25D366; }
+.instagram { background: linear-gradient(45deg,#feda75,#d62976,#962fbf); }
+.youtube { background: #921717; }
+.visit { background: #af46c4; }
+
+/* FOOTER */
+footer {
+  text-align: right;
+  padding: 20px;
+  background: #042c12;
+}
+.credit {
+  font-size: 12px;
+  color: white;
+}
+.event-sheet {
+  margin-top: 13vh;
+  background: #8d8082;
+  padding: 60px 5%;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.gallery img {
+  width: 100%;
+  display: block;
+}

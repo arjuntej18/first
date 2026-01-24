@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Events</title>
+  <link rel="stylesheet" href="st.css">
+</head>
+<body>
+
+<header class="top-header">
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  <div class="brand">Elegant_decor_bangaluru</div>
+</header>
+
+<div class="header-divider"></div>
+
+<nav id="sideMenu" class="side-menu">
+  <a href="index.html">Home</a>
+</nav>
+
+<main class="event-sheet">
+  <div class="gallery"></div>
+</main>
+
+<script>
+function toggleMenu(){
+  document.getElementById("sideMenu").classList.toggle("open");
+}
+
+const g=document.querySelector(".gallery");
+for(let i=1;i<=160;i++){
+  let img=document.createElement("img");
+  img.src=`Event_photos/image (${i}).jpeg`;
+  g.appendChild(img);
+}
+</script>
+
+</body>
+</html>
